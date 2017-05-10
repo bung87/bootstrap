@@ -11,13 +11,17 @@
     &:first-child {
       > a,
       > span {
-        .border-left-radius(@border-radius);
+         & when (@pagination-item-border-radius-enlabed = true){
+          .border-left-radius(@border-radius);
+        }
       }
     }
     &:last-child {
       > a,
       > span {
-        .border-right-radius(@border-radius);
+         & when (@pagination-item-border-radius-enlabed = true){
+          .border-right-radius(@border-radius);
+        }
       }
     }
   }

@@ -5,33 +5,42 @@
   display: inline-block;
   padding-left: 0;
   margin: @line-height-computed 0;
-  border-radius: @border-radius-base;
-
+    & when (@pagination-item-border-radius-enlabed = true){
+      border-radius: @border-radius-base;
+  }
+   // & when (@pagination-center = true){
+   //    margin-left: auto;
+   //    margin-right: auto;
+   //  }
   > li {
     display: inline; // Remove list-style and block-level defaults
     > a,
     > span {
       position: relative;
       float: left; // Collapse white-space
-      padding: @padding-base-vertical @padding-base-horizontal;
-      line-height: @line-height-base;
+      padding: @pagination-item-padding-base-vertical @pagination-item-padding-base-horizontal;
+      line-height: @pagination-item-line-height;
       text-decoration: none;
       color: @pagination-color;
       background-color: @pagination-bg;
       border: 1px solid @pagination-border;
-      margin-left: -1px;
+      margin-left: @pagination-item-margin-left;
     }
     &:first-child {
       > a,
       > span {
         margin-left: 0;
-        .border-left-radius(@border-radius-base);
+        & when (@pagination-item-border-radius-enlabed = true){
+          .border-left-radius(@border-radius-base);
+        }
       }
     }
     &:last-child {
       > a,
       > span {
-        .border-right-radius(@border-radius-base);
+         & when (@pagination-item-border-radius-enlabed = true){
+          .border-right-radius(@border-radius-base);
+        }
       }
     }
   }
@@ -74,16 +83,23 @@
     }
   }
 }
-
+// Centered
+.pagination-centered{
+  display: flex;
+  .pagination{
+     margin-left: auto;
+     margin-right: auto;
+  }
+}
 // Sizing
 // --------------------------------------------------
 
 // Large
 .pagination-lg {
-  .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  .pagination-size(@pagination-item-padding-base-vertical; @pagination-item-padding-base-horizontal; @font-size-large; @line-height-large; @border-radius-large);
 }
 
 // Small
 .pagination-sm {
-  .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+  .pagination-size(@pagination-item-padding-base-vertical; @pagination-item-padding-base-horizontal; @font-size-small; @line-height-small; @border-radius-small);
 }
