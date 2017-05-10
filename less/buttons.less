@@ -79,11 +79,15 @@
 
 .btn-default {
   &-reverse{
+
      @background: @btn-default-border ;
      @border: @btn-default-border;
      @color: lighten(@btn-default-color, 10%);
      // .button-reverse(@color; @background; @border);
       color:@color;
+      &.dropdown-toggle{
+        border-left: 1px solid darken( @border ,10%);
+      }
        &:focus,
         &.focus {
           color: @color;
