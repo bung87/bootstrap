@@ -63,7 +63,6 @@
     }
   }
 }
-.generate-fixed(4);
 
 .generate-fixed(@n, @i: 1) when (@i =< @n) {
   @index :(@i*2);
@@ -72,6 +71,8 @@
   }
   .generate-fixed(@n, (@i + 1));
 }
+
+.generate-fixed(4);
 
 // Alternate buttons
 // --------------------------------------------------
