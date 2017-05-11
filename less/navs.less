@@ -138,6 +138,37 @@
   }
 }
 
+// Underline
+.nav-underline{
+  li:hover:after,li.active:after{
+    border-bottom: 2px solid @brand-primary;
+    bottom: 0;
+    content: "";
+    // left: (extract(@nav-link-padding,1)/2);
+    left:0;
+    position: absolute;
+    width: 100%;
+  }
+  border-bottom:1px solid #f2f7fa;
+  &.nav-stacked{
+    border-bottom:none;
+    >li{
+      border-bottom:1px solid #f2f7fa;
+    }
+  }
+  >li{
+    float: left;
+    
+    >a{
+      // margin-left:extract(@nav-link-padding,1);
+       padding: extract(@nav-link-padding,1)  (extract(@nav-link-padding,2)/2);
+      &:hover,&:active,&:focus{
+        background: transparent;
+      }
+      color:inherit;
+    }
+  }
+}
 
 // Stacked pills
 .nav-stacked {
