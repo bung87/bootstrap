@@ -1,7 +1,7 @@
 //
 // Navbars
 // --------------------------------------------------
-
+@import "mixins/vendor-prefixes.less";
 
 // Wrapper and base class
 //
@@ -391,8 +391,24 @@
 // Alternate navbars
 // --------------------------------------------------
 
-// Default navbar
-.navbar-default {
+.navbar-variant(@navbar-default-bg:@navbar-default-bg;
+  @navbar-default-border:@navbar-default-border; 
+  @navbar-default-brand-color:@navbar-default-brand-color;
+  @navbar-default-brand-hover-color:@navbar-default-brand-hover-color;
+  @navbar-default-brand-hover-bg:@navbar-default-brand-hover-bg;
+  @navbar-default-color:@navbar-default-color;
+  @navbar-default-link-color:@navbar-default-link-color;
+  @navbar-default-link-hover-color:@navbar-default-link-hover-color;
+  @navbar-default-link-hover-bg:@navbar-default-link-hover-bg;
+  @navbar-default-link-active-color:@navbar-default-link-active-color;
+  @navbar-default-link-active-bg:@navbar-default-link-active-bg;
+  @navbar-default-link-disabled-color:@navbar-default-link-disabled-color;
+   @navbar-default-link-disabled-bg:@navbar-default-link-disabled-bg;
+   @navbar-default-toggle-border-color:@navbar-default-toggle-border-color;
+   @navbar-default-toggle-hover-bg:@navbar-default-toggle-hover-bg;
+   @navbar-default-toggle-icon-bar-bg: @navbar-default-toggle-icon-bar-bg;
+  )
+   {
   background-color: @navbar-default-bg;
   border-color: @navbar-default-border;
 
@@ -521,6 +537,41 @@
         color: @navbar-default-link-disabled-color;
       }
     }
+  }
+}
+//Default navbar
+.navbar-default{
+  .navbar-variant();
+}
+.navbar-primary{
+  .navbar-variant(
+  @navbar-default-bg:@brand-primary;
+  @navbar-default-border; 
+  @navbar-default-brand-color:#fff;
+  @navbar-default-brand-hover-color:#fff;
+  @navbar-default-brand-hover-bg;
+  @navbar-default-color:#fff;
+  @navbar-default-link-color:#fff;
+  @navbar-default-link-hover-color:#fff;
+  @navbar-default-link-hover-bg:darken(@brand-primary,10%);
+  @navbar-default-link-active-color:#fff;
+  @navbar-default-link-active-bg:darken(@brand-primary,10%);
+  @navbar-default-link-disabled-color;
+   @navbar-default-link-disabled-bg;
+   @navbar-default-toggle-border-color;
+   @navbar-default-toggle-hover-bg;
+   @navbar-default-toggle-icon-bar-bg;
+  
+  );
+  .form-control{
+    color:#fff;
+    border-color: darken(@brand-primary,10%);
+    background-color: darken(@brand-primary,10%);
+    .box-shadow(none);
+     .placeholder(#fff);
+  }
+  .btn-primary{
+     border-color: darken(@brand-primary,10%);
   }
 }
 
