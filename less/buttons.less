@@ -20,7 +20,6 @@
   .button-size(@btn-padding-base-vertical; @btn-padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
   .user-select(none);
   .transition(all .2s ease-in-out);
-  &,
   &:active,
   &.active {
     &:focus,
@@ -57,7 +56,7 @@
     .box-shadow(none);
   }
 
-  a& {
+  a {
     &.disabled,
     fieldset[disabled] & {
       pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
@@ -163,7 +162,7 @@
   font-weight: normal;
   border-radius: 0;
 
-  &,
+
   &:active,
   &.active,
   &[disabled],
@@ -171,7 +170,7 @@
     background-color: transparent;
     .box-shadow(none);
   }
-  &,
+
   &:hover,
   &:focus,
   &:active {
@@ -195,7 +194,6 @@
      color: @link-hover-color;
       text-decoration: @link-hover-decoration;
       background-color: transparent;
-      &,
     &:active,
     &.active,
     &[disabled],
@@ -203,7 +201,7 @@
       background-color: transparent;
       .box-shadow(none);
     }
-    &,
+
     &:hover,
     &:focus,
     &:active {
