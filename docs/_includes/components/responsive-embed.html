@@ -6,7 +6,26 @@
   <p><strong>Pro-Tip!</strong> You don't need to include <code>frameborder="0"</code> in your <code>&lt;iframe&gt;</code>s as we override that for you.</p>
   <div class="bs-example" data-example-id="responsive-embed-16by9-iframe-youtube">
     <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+      <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+     <script>
+    function setIframeSrc() {
+  var s = "//www.youtube.com/embed/zpOULjyy-n8?rel=0";
+  var iframe1 = document.getElementById('iframe1');
+  iframe1.src = s;
+  setTimeout(function(){
+      if (window.stop) {
+          window.stop();
+      } else {
+          document.execCommand('Stop'); // MSIE
+      }
+  }, 1000);
+  iframe1.onload = function() {
+      clearTimeout(iframeLoadTimeout); 
+     
+  }
+}
+window.onload = setIframeSrc;
+</script>
     </div>
   </div>
 {% highlight html %}
