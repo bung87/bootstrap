@@ -86,7 +86,7 @@
 <div class="row">
   <div class="col-xs-4">
     <label for="input-@font-family-sans-serif">@font-family-sans-serif</label>
-    <input class="form-control" id="input-@font-family-sans-serif" type="text" value="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" data-var="@font-family-sans-serif"/>
+    <input class="form-control" id="input-@font-family-sans-serif" type="text" value="&quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;微软雅黑&quot;, Arial, sans-serif" data-var="@font-family-sans-serif"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@font-family-serif">@font-family-serif</label>
@@ -315,6 +315,49 @@
 <p>For each of Bootstrap's buttons, define text, background and border color.</p>
 <div class="row">
   <div class="col-xs-4">
+    <label for="input-@btn-outline-enabled">@btn-outline-enabled</label>
+    <input class="form-control" id="input-@btn-outline-enabled" type="text" value="false" data-var="@btn-outline-enabled"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@btn-border-radius-enlabed">@btn-border-radius-enlabed</label>
+    <input class="form-control" id="input-@btn-border-radius-enlabed" type="text" value="true" data-var="@btn-border-radius-enlabed"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@btn-padding-base-vertical">@btn-padding-base-vertical</label>
+    <input class="form-control" id="input-@btn-padding-base-vertical" type="text" value="@padding-base-vertical" data-var="@btn-padding-base-vertical"/>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-xs-4">
+    <label for="input-@btn-padding-base-horizontal">@btn-padding-base-horizontal</label>
+    <input class="form-control" id="input-@btn-padding-base-horizontal" type="text" value="@padding-base-horizontal" data-var="@btn-padding-base-horizontal"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@btn-padding-large-vertical">@btn-padding-large-vertical</label>
+    <input class="form-control" id="input-@btn-padding-large-vertical" type="text" value="@padding-large-vertical" data-var="@btn-padding-large-vertical"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@btn-padding-large-horizontal">@btn-padding-large-horizontal</label>
+    <input class="form-control" id="input-@btn-padding-large-horizontal" type="text" value="@padding-large-horizontal" data-var="@btn-padding-large-horizontal"/>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-xs-4">
+    <label for="input-@btn-padding-small-vertical">@btn-padding-small-vertical</label>
+    <input class="form-control" id="input-@btn-padding-small-vertical" type="text" value="@padding-small-vertical" data-var="@btn-padding-small-vertical"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@btn-padding-small-horizontal">@btn-padding-small-horizontal</label>
+    <input class="form-control" id="input-@btn-padding-small-horizontal" type="text" value="@padding-small-horizontal" data-var="@btn-padding-small-horizontal"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@btn-padding-xs-vertical">@btn-padding-xs-vertical</label>
+    <input class="form-control" id="input-@btn-padding-xs-vertical" type="text" value="@padding-xs-vertical" data-var="@btn-padding-xs-vertical"/>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-xs-4">
+    <label for="input-@btn-padding-xs-horizontal">@btn-padding-xs-horizontal</label>
+    <input class="form-control" id="input-@btn-padding-xs-horizontal" type="text" value="@padding-xs-horizontal" data-var="@btn-padding-xs-horizontal"/>
+  </div>
+  <div class="col-xs-4">
     <label for="input-@btn-font-weight">@btn-font-weight</label>
     <input class="form-control" id="input-@btn-font-weight" type="text" value="normal" data-var="@btn-font-weight"/>
   </div>
@@ -322,11 +365,11 @@
     <label for="input-@btn-default-color">@btn-default-color</label>
     <input class="form-control" id="input-@btn-default-color" type="text" value="#333" data-var="@btn-default-color"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-default-bg">@btn-default-bg</label>
     <input class="form-control" id="input-@btn-default-bg" type="text" value="#fff" data-var="@btn-default-bg"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-default-border">@btn-default-border</label>
     <input class="form-control" id="input-@btn-default-border" type="text" value="#ccc" data-var="@btn-default-border"/>
@@ -335,11 +378,11 @@
     <label for="input-@btn-primary-color">@btn-primary-color</label>
     <input class="form-control" id="input-@btn-primary-color" type="text" value="#fff" data-var="@btn-primary-color"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-primary-bg">@btn-primary-bg</label>
     <input class="form-control" id="input-@btn-primary-bg" type="text" value="@brand-primary" data-var="@btn-primary-bg"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-primary-border">@btn-primary-border</label>
     <input class="form-control" id="input-@btn-primary-border" type="text" value="darken(@btn-primary-bg, 5%)" data-var="@btn-primary-border"/>
@@ -348,11 +391,11 @@
     <label for="input-@btn-success-color">@btn-success-color</label>
     <input class="form-control" id="input-@btn-success-color" type="text" value="#fff" data-var="@btn-success-color"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-success-bg">@btn-success-bg</label>
     <input class="form-control" id="input-@btn-success-bg" type="text" value="@brand-success" data-var="@btn-success-bg"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-success-border">@btn-success-border</label>
     <input class="form-control" id="input-@btn-success-border" type="text" value="darken(@btn-success-bg, 5%)" data-var="@btn-success-border"/>
@@ -361,11 +404,11 @@
     <label for="input-@btn-info-color">@btn-info-color</label>
     <input class="form-control" id="input-@btn-info-color" type="text" value="#fff" data-var="@btn-info-color"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-info-bg">@btn-info-bg</label>
     <input class="form-control" id="input-@btn-info-bg" type="text" value="@brand-info" data-var="@btn-info-bg"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-info-border">@btn-info-border</label>
     <input class="form-control" id="input-@btn-info-border" type="text" value="darken(@btn-info-bg, 5%)" data-var="@btn-info-border"/>
@@ -374,11 +417,11 @@
     <label for="input-@btn-warning-color">@btn-warning-color</label>
     <input class="form-control" id="input-@btn-warning-color" type="text" value="#fff" data-var="@btn-warning-color"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-warning-bg">@btn-warning-bg</label>
     <input class="form-control" id="input-@btn-warning-bg" type="text" value="@brand-warning" data-var="@btn-warning-bg"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-warning-border">@btn-warning-border</label>
     <input class="form-control" id="input-@btn-warning-border" type="text" value="darken(@btn-warning-bg, 5%)" data-var="@btn-warning-border"/>
@@ -387,11 +430,11 @@
     <label for="input-@btn-danger-color">@btn-danger-color</label>
     <input class="form-control" id="input-@btn-danger-color" type="text" value="#fff" data-var="@btn-danger-color"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-danger-bg">@btn-danger-bg</label>
     <input class="form-control" id="input-@btn-danger-bg" type="text" value="@brand-danger" data-var="@btn-danger-bg"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-danger-border">@btn-danger-border</label>
     <input class="form-control" id="input-@btn-danger-border" type="text" value="darken(@btn-danger-bg, 5%)" data-var="@btn-danger-border"/>
@@ -400,11 +443,11 @@
     <label for="input-@btn-link-disabled-color">@btn-link-disabled-color</label>
     <input class="form-control" id="input-@btn-link-disabled-color" type="text" value="@gray-light" data-var="@btn-link-disabled-color"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-border-radius-base">@btn-border-radius-base</label>
     <input class="form-control" id="input-@btn-border-radius-base" type="text" value="@border-radius-base" data-var="@btn-border-radius-base"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-border-radius-large">@btn-border-radius-large</label>
     <input class="form-control" id="input-@btn-border-radius-large" type="text" value="@border-radius-large" data-var="@btn-border-radius-large"/>
@@ -952,6 +995,32 @@
 </div>
 <h2 id="pagination">Pagination</h2>
 <div class="row">
+  <div class="col-xs-4">
+    <label for="input-@pagination-item-padding-base-vertical">@pagination-item-padding-base-vertical</label>
+    <input class="form-control" id="input-@pagination-item-padding-base-vertical" type="text" value="@padding-base-vertical" data-var="@pagination-item-padding-base-vertical"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@pagination-item-padding-base-horizontal">@pagination-item-padding-base-horizontal</label>
+    <input class="form-control" id="input-@pagination-item-padding-base-horizontal" type="text" value="@padding-base-horizontal" data-var="@pagination-item-padding-base-horizontal"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@pagination-item-font-size">@pagination-item-font-size</label>
+    <input class="form-control" id="input-@pagination-item-font-size" type="text" value="@font-size-base" data-var="@pagination-item-font-size"/>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-xs-4">
+    <label for="input-@pagination-item-line-height">@pagination-item-line-height</label>
+    <input class="form-control" id="input-@pagination-item-line-height" type="text" value="@line-height-base" data-var="@pagination-item-line-height"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@pagination-item-margin-left">@pagination-item-margin-left</label>
+    <input class="form-control" id="input-@pagination-item-margin-left" type="text" value="-1px" data-var="@pagination-item-margin-left"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@pagination-form-margin-left">@pagination-form-margin-left</label>
+    <input class="form-control" id="input-@pagination-form-margin-left" type="text" value="10px" data-var="@pagination-form-margin-left"/>
+  </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@pagination-color">@pagination-color</label>
     <input class="form-control" id="input-@pagination-color" type="text" value="@link-color" data-var="@pagination-color"/>

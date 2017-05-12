@@ -55,11 +55,43 @@
       <li role="presentation"><a href="#">Messages</a></li>
     </ul>
   </div>
-{% highlight html %}
+  {% highlight html %}
 <ul class="nav nav-pills nav-stacked">
   ...
 </ul>
 {% endhighlight %}
+    <h2 id="nav-underline">Underline</h2>
+  <p>Take that same HTML, but use <code>.underline</code> instead:</p>
+  <div class="bs-example" data-example-id="simple-nav-underline">
+    <ul class="nav nav-underline">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="nav nav-underline">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+{% endhighlight %}
+<p>Pills are also vertically stackable. Just add <code>.nav-stacked</code>.</p>
+  <div class="bs-example" data-example-id="simple-nav-sunderline-tacked">
+    <ul class="nav nav-underline nav-stacked nav-pills-stacked-example">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+  </div>
+  {% highlight html %}
+<ul class="nav nav-underline nav-stacked">
+  ...
+</ul>
+{% endhighlight %}
+
+   
+
 
 
   <h2 id="nav-justified">Justified</h2>

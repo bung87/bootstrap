@@ -43,6 +43,7 @@
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-link">Link</button>
   </div>
+
 {% highlight html %}
 <!-- Standard button -->
 <button type="button" class="btn btn-default">Default</button>
@@ -65,7 +66,25 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn-link">Link</button>
 {% endhighlight %}
-
+  <h2 id="buttons-options">Reversed</h2>
+   <div class="bs-example" data-example-id="btn-reverse">
+    <button type="button" class="btn btn-default-reverse">Default</button>
+    <button type="button" class="btn btn-primary-reverse">Primary</button>
+    <button type="button" class="btn btn-success-reverse">Success</button>
+    <button type="button" class="btn btn-info-reverse">Info</button>
+    <button type="button" class="btn btn-warning-reverse">Warning</button>
+    <button type="button" class="btn btn-danger-reverse">Danger</button>
+    <button type="button" class="btn btn-link-reverse">Link</button>
+  </div>
+{% highlight html %}
+ <button type="button" class="btn btn-default-reverse">Default</button>
+    <button type="button" class="btn btn-primary-reverse">Primary</button>
+    <button type="button" class="btn btn-success-reverse">Success</button>
+    <button type="button" class="btn btn-info-reverse">Info</button>
+    <button type="button" class="btn btn-warning-reverse">Warning</button>
+    <button type="button" class="btn btn-danger-reverse">Danger</button>
+    <button type="button" class="btn btn-link-reverse">Link</button>
+{% endhighlight %}
   <div class="bs-callout bs-callout-warning" id="callout-buttons-color-accessibility">
     <h4>Conveying meaning to assistive technologies</h4>
     <p>Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.</p>
@@ -91,6 +110,7 @@
       <button type="button" class="btn btn-default btn-xs">Extra small button</button>
     </p>
   </div>
+
 {% highlight html %}
 <p>
   <button type="button" class="btn btn-primary btn-lg">Large button</button>
@@ -109,7 +129,53 @@
   <button type="button" class="btn btn-default btn-xs">Extra small button</button>
 </p>
 {% endhighlight %}
-
+  <h3>Fixed</h3>
+    <div class="bs-example" data-example-id="btn-fixed">
+    <p>
+      <button type="button" class="btn btn-primary btn-fixed-2">两个</button>
+      <button type="button" class="btn btn-primary btn-fixed-2">字</button>
+      <button type="button" class="btn btn-default btn-fixed-2">的按</button>
+      <button type="button" class="btn btn-primary btn-fixed-2">钮</button>
+    </p>
+    <p>
+      <button type="button" class="btn btn-primary btn-fixed-4">四个字的</button>
+      <button type="button" class="btn btn-primary btn-fixed-4">按钮</button>
+      <button type="button" class="btn btn-default btn-fixed-4">四个字的</button>
+     
+      <button type="button" class="btn btn-default btn-fixed-4">按钮</button>
+    </p>
+    <p>
+      <button type="button" class="btn btn-primary btn-fixed-6">六个字的按钮</button>
+      <button type="button" class="btn btn-default btn-fixed-6">六个字的按钮</button>
+    </p>
+    <p>
+      <button type="button" class="btn btn-primary btn-fixed-8">八个字的按钮最后</button>
+      <button type="button" class="btn btn-default btn-fixed-8">八个字的按钮最后</button>
+    </p>
+  </div>
+{% highlight html %}
+<p>
+  <button type="button" class="btn btn-primary btn-fixed-2">两个</button>
+  <button type="button" class="btn btn-primary btn-fixed-2">字</button>
+  <button type="button" class="btn btn-default btn-fixed-2">的按</button>
+  <button type="button" class="btn btn-primary btn-fixed-2">钮</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-fixed-4">四个字的</button>
+  <button type="button" class="btn btn-primary btn-fixed-4">按钮</button>
+  <button type="button" class="btn btn-default btn-fixed-4">四个字的</button>
+ 
+  <button type="button" class="btn btn-default btn-fixed-4">按钮</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-fixed-6">六个字的按钮</button>
+  <button type="button" class="btn btn-default btn-fixed-6">六个字的按钮</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-fixed-8">八个字的按钮最后</button>
+  <button type="button" class="btn btn-default btn-fixed-8">八个字的按钮最后</button>
+</p>
+{% endhighlight %}
   <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
   <div class="bs-example" data-example-id="block-btns">
     <div class="well center-block" style="max-width: 400px;">
