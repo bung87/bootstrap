@@ -9,7 +9,7 @@
  * details, see https://creativecommons.org/licenses/by/3.0/.
  */
 
-/* global ZeroClipboard, anchors */
+/* global ZeroClipboard, anchors, Clipboard */
 
 !function ($) {
   'use strict';
@@ -170,7 +170,22 @@
       $('.zero-clipboard').remove()
       ZeroClipboard.destroy()
     })
-
+    var clipboard = new Clipboard('.bs-glyphicons-list li', {
+                    text: function (trigger) {
+                      return $(trigger).find('.glyphicon').get(0).outerHTML;
+                    }
+                  });
+    clipboard.on('success', function (e) {
+              $(e.trigger).tooltip({
+                  html: true,
+                  title: e.text + '<br>Copied',
+                  trigger: 'manual'
+                }).tooltip('show');
+              setTimeout(function () {
+                      $(e.trigger).tooltip('hide');
+                    }, 2000);
+              e.clearSelection();
+            });
   })
 
 }(jQuery)
