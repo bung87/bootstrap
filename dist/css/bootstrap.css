@@ -3774,6 +3774,7 @@ fieldset[disabled] .btn-danger.focus {
 .btn-link {
   font-weight: normal;
   color: #337ab7;
+  background-color: transparent;
   border-radius: 0;
 }
 .btn-link:active,
