@@ -76,11 +76,48 @@
 
 // Alternate buttons
 // --------------------------------------------------
+.btn-def-pri{
+     @background: @btn-default-bg ;
+     @border: @btn-default-border;
+     @color: lighten(@btn-default-color, 10%);
+     color:@color;
+     background-color: @background;
+     border-color:@border;
+     // @include button-reverse(@color, @background, @border);
+      &.dropdown-toggle{
+        border-left: 1px solid darken( @border ,10%);
+      }
+       &:focus,
+        &.focus {
+          color: @btn-primary-color;
+          background-color: darken( @btn-primary-bg ,10%);
+              border-color: darken( @btn-primary-border ,10%);
+        }
+        &:hover {
+          color: @btn-primary-color;
+          background-color: darken( @btn-primary-bg ,10%);
+              border-color: darken( @btn-primary-border ,10%);
+        }
+        &:active,
+        &.active,
+        .open > .dropdown-toggle {
+          color: @btn-primary-color;
+           background-color: darken( @btn-primary-bg ,10%);
+              border-color: darken( @btn-primary-border ,10%);
 
+          &:hover,
+          &:focus,
+          &.focus {
+            color: @btn-primary-color;
+            background-color: darken( @btn-primary-bg ,10%);
+              border-color: darken( @btn-primary-border ,10%);
+          }
+        }
+}
 .btn-default {
   &-reverse{
 
-     @background: @btn-default-border ;
+     @background: @btn-default-bg ;
      @border: @btn-default-border;
      @color: lighten(@btn-default-color, 10%);
      // .button-reverse(@color; @background; @border);
