@@ -3071,7 +3071,7 @@ fieldset[disabled] .btn a {
 .btn-def-pri {
   color: #4d4d4d;
   background-color: #fff;
-  border: #ccc;
+  border-color: #ccc;
 }
 .btn-def-pri.dropdown-toggle {
   border-left: 1px solid #b3b3b3;
